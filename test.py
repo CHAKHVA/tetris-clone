@@ -1,0 +1,6 @@
+file = open('max_score.txt', 'r+')
+print(file.read())
+file.truncate()
+file.seek(0, 0)
+file.write('123')
+print(file.read())
